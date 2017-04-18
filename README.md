@@ -109,18 +109,33 @@ v
 returns version number
 
 Ports:
+
 Digital 4-13 servos or pin 13 for leds
+
 Analog A0-A5 inputs
+
 I2C - 2 default ports used.
+
 D2 I2C SDA Also servo 90
+
 D3 I2C SCL Also servo 91
+
 D0 Serial1 Rx Also servo 92
+
 D1 Serial1 Tx Also servo 93
+
 For reference with Ohbot
+
 Servo 0 HeadNod
+
 Servo 1 Head turn
+
 Servo 2 Eye turn
+
 Servo 3 Lid Blink
+
 Servo 4 Top Lip
+
 Servo 5 Bottom Lip
+
 Servo 6 Eye tilt
