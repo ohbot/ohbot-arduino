@@ -1,9 +1,8 @@
-# ohbot-arduino
 Ohbot arduino driver. 
-
+=================
 
 V1.8 - Servo Controller for Ohbot Robot using Ohbrain board
-=================
+----------------
 
 This sketch needs the following libraries which are both available under GNU public licence: 
 
@@ -27,13 +26,12 @@ Overview
 The Servo Controller for Ohbot Robot receives commands on the serial port and converts these to instructions
 for moving servo motors and controlling LEDs.  It also allows the analogue inputs on the Arduino to be polled
 
-V1.5  Added eye light LED support, correction to input response.
-
-V1.6 Draft add I2C support for inputs.
-
-V1.7 Added demo program support
-
-V1.8 Remapped pinlist for 32U4 based board
+|Version | Change |
+| ------ | ------ |
+|V1.5 | Added eye light LED support, correction to input response.|
+|V1.6 | Draft add I2C support for inputs.|
+|V1.7 | Added demo program support|
+|V1.8 | Remapped pinlist for 32U4 based board|
 
 Commands:
 
@@ -43,7 +41,12 @@ m, d, a, x, n, t, r, l, i, g, e, h, c, v
 
 static const GUID <<name>> = { 0x29d81537, 0xaf38, 0x4be3, { 0x9b, 0xee, 0x4b, 0x69, 0x52, 0x12, 0x48, 0x6 } };
 
-mss,ttt[,vvv]      MOVE
+MOVE
+---
+
+```arduino
+mss,ttt[,vvv]  
+```
 
 ss = servo number 0 to  11
 
