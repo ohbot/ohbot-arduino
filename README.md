@@ -47,16 +47,17 @@ MOVE
 ```arduino
 mss,ttt[,vvv]  
 ```
+| --- | --- |
+|ss |servo number 0 to  11 |
+|ttt | position in degrees, if >180 then uS pulse width|
+|vvv |speed 1-250, 1 slowest, 0 = full speed.|
 
-ss = servo number 0 to  11
+*defaults to centre (90 deg) and full speed with no parameters*
 
-ttt = position in degrees, if >180 then uS pulse width
+DETACH
+------
 
-vvv = speed 1-250, 1 slowest, 0 = full speed.
-
-defaults to centre (90 deg) and full speed with no parameters
-
-dss       DETACH
+dss       
 
 detaches servo ss
 
