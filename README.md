@@ -23,6 +23,8 @@ To install the VarSpeedServo library:
 _This sketch also needs the wire library which is included in the Arduino environment_
 
 Overview
+-----------
+
 The Servo Controller for Ohbot Robot receives commands on the serial port and converts these to instructions
 for moving servo motors and controlling LEDs.  It also allows the analogue inputs on the Arduino to be polled
 
@@ -72,6 +74,7 @@ dx
 ```
 
 ATTACH
+-------------
 
 ``` arduino
 ass
@@ -80,6 +83,7 @@ attaches servo ss
 
 
 ATTACH ALL
+-----------
 
 ```arduino
 ax        
@@ -116,6 +120,7 @@ t
 store min and max values for all servos in EEPROM
 
 RESET
+-------------------
 
 ```arduino
 r
@@ -124,6 +129,7 @@ r
 sets all servos to midpoint.
 
 LED
+------------------
 
 ```arduino
 lnn,rrr,ggg,bbb
@@ -145,6 +151,7 @@ l01,0,0,0
 ```
 
 READ Analog
+-----------------
 
 ```arduino
 ipp
