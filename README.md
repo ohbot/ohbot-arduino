@@ -58,38 +58,98 @@ mss,ttt[,vvv]
 
 DETACH
 ------
-
+```arduino
 dss       
+```
 
-detaches servo ss
+detaches servo `ss`
 
+DETACH ALL
+-----
 
-dx        DETACH ALL
+```arduino
+dx        
+```
 
+ATTACH
 
-ass       ATTACH
-
+``` arduino
+ass
+```
 attaches servo ss
 
-ax        ATTACH ALL specified servos
 
-xss,uuuu      SET MAX PULSE
+ATTACH ALL
+
+```arduino
+ax        
+``` 
+
+Attach all specified servos
+
+
+SET MAX PULSE
+------
+
+```arduino
+xss,uuuu      
+```
+
 set max value uuu  in uS pulse width for servo ss rep 180 deg
 
-nss,uuu     SET MIN PULSE
+SET MIN PULSE
+-------
+
+```arduino
+nss,uuu   
+```
+
 set min value uuu in uS pulse width for servo ss rep 0 deg
 
-t         STORE
+STORE
+----
+
+```arduino
+t    
+```
+
 store min and max values for all servos in EEPROM
 
-r         RESET
+RESET
+
+```arduino
+r
+```
+
 sets all servos to midpoint.
 
-lnn,rrr,ggg,bbb
-set led nn - 0 or 1 if  2 eyes used to r, g b values
-blank is obviously lnn,0,0,0
+LED
 
-ipp       READ Analog
+```arduino
+lnn,rrr,ggg,bbb
+```
+
+|Param|Description           |
+| --- | ---                  |
+| nn  | led number (00 or 01)|
+| rrr | red value (0-255)    |
+| ggg | green value (0-255)  |
+| bbb | blue value (0-255)   |
+
+set led nn - 0 or 1 if  2 eyes used to r, g b values. 
+
+To turn eyes off:
+
+```arduino
+l01,0,0,0
+```
+
+READ Analog
+
+```arduino
+ipp
+```
+
 read Analog port pp.
 responds with vpp,vvv where v is value of analog port.
 
