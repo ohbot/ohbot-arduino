@@ -5,30 +5,23 @@ Ohbot arduino driver.
 V1.8 - Servo Controller for Ohbot Robot using Ohbrain board
 =================
 
-This sketch needs the following libraries which are both available under GNU public licence: Adafruit Neopixel, VarSpeedServo.
+This sketch needs the following libraries which are both available under GNU public licence: 
 
-To install the Adafruit Neopixel library select Sketch, Include Library, Manage Libraries.
+* Adafruit Neopixel 
+* VarSpeedServo
 
-In the box that says Filter your search type Adafruit Neopixel
+To install the Adafruit Neopixel library: 
 
-Click on the box that appears and click the Install button.
+1. Select Sketch, Include Library, Manage Libraries. 
+2. In the box that says Filter your search type Adafruit Neopixel.
+3. Click on the box that appears and click the Install button.
 
-To install the VarSpeedServo library go to this link and download the zip file:
+To install the VarSpeedServo library: 
+1. Go to (this)[https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip] link and download the zip file:
+2. Select Sketch, Include Library, Add .ZIP Library.
+3. Browse to where you downloaded VarSpeedServo.zip � select it and click Open.
 
-https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip
-
-Select Sketch, Include Library, Add .ZIP Library.
-
-Browse to where you downloaded VarSpeedServo.zip � select it and click Open.
-
-This sketch also needs the wire library which is included in the Arduino environment
-
- 
-This Servo Controller for Ohbot Robot is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
-
-This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+_This sketch also needs the wire library which is included in the Arduino environment_
 
 Overview
 The Servo Controller for Ohbot Robot receives commands on the serial port and converts these to instructions
@@ -146,16 +139,18 @@ D1 Serial1 Tx Also servo 93
 
 For reference with Ohbot
 
-Servo 0 HeadNod
+| Servo | Motor |
+|------ | ----- |
+|Servo 0|HeadNod|
+|Servo 1|Head turn|
+|Servo 2|Eye turn|
+|Servo 3|Lid Blink|
+|Servo 4|Top Lip|
+|Servo 5|Bottom Lip|
+|Servo 6|Eye tilt|
 
-Servo 1 Head turn
+This Servo Controller for Ohbot Robot is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
 
-Servo 2 Eye turn
+This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 
-Servo 3 Lid Blink
-
-Servo 4 Top Lip
-
-Servo 5 Bottom Lip
-
-Servo 6 Eye tilt
+You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
