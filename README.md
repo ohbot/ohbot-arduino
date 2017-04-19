@@ -35,27 +35,41 @@ The Servo Controller for Ohbot Robot receives commands on the serial port and co
 for moving servo motors and controlling LEDs.  It also allows the analogue inputs on the Arduino to be polled
 
 V1.5  Added eye light LED support, correction to input response.
+
 V1.6 Draft add I2C support for inputs.
+
 V1.7 Added demo program support
+
 V1.8 Remapped pinlist for 32U4 based board
+
 Commands:
+
 m, d, a, x, n, t, r, l, i, g, e, h, c, v
+
 // {29D81537-AF38-4BE3-9BEE-4B6952124806}
+
 static const GUID <<name>> = { 0x29d81537, 0xaf38, 0x4be3, { 0x9b, 0xee, 0x4b, 0x69, 0x52, 0x12, 0x48, 0x6 } };
 
-
 mss,ttt[,vvv]      MOVE
- ss = servo number 0 to  11
- ttt = position in degrees, if >180 then uS pulse width
- vvv = speed 1-250, 1 slowest, 0 = full speed.
+
+ss = servo number 0 to  11
+
+ttt = position in degrees, if >180 then uS pulse width
+
+vvv = speed 1-250, 1 slowest, 0 = full speed.
+
 defaults to centre (90 deg) and full speed with no parameters
 
 dss       DETACH
+
 detaches servo ss
+
 
 dx        DETACH ALL
 
+
 ass       ATTACH
+
 attaches servo ss
 
 ax        ATTACH ALL specified servos
@@ -81,11 +95,17 @@ read Analog port pp.
 responds with vpp,vvv where v is value of analog port.
 
 hpp,e,ttt
+
 start monitoring port pp
+
 e = event to change and ttt parameter
+
 e = 1 change greater than ttt 0 or not included any change
+
 e = 2 value rises above threshold ttt
+
 e = 3 value falls above threshold ttt
+
 for events 2 and 3, it will trigger once, and be reset when value falls back below/above threshold.
 kpp
 stop monitoring port pp
