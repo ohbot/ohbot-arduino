@@ -47,8 +47,10 @@ MOVE
 ```arduino
 mss,ttt[,vvv]  
 ```
+
+|Param|Description |
 | --- | --- |
-|ss |servo number 0 to  11 |
+| ss |servo number 0 to  11 |
 |ttt | position in degrees, if >180 then uS pulse width|
 |vvv |speed 1-250, 1 slowest, 0 = full speed.|
 
