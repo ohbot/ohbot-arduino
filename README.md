@@ -16,8 +16,8 @@ To install the Adafruit Neopixel library:
 3. Click on the box that appears and click the Install button.
 
 To install the VarSpeedServo library: 
-1. Go to [this link](https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip) and download the zip file:
-2. Select Sketch, Include Library, Add .ZIP Library.
+1. Download [this zip file.](https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip) 
+2. Inside the Arduino IDE select: Sketch → Include Library → Add .ZIP Library.
 3. Browse to where you downloaded VarSpeedServo.zip � select it and click Open.
 
 _This sketch also needs the wire library which is included in the Arduino environment_
@@ -156,7 +156,12 @@ ipp
 read Analog port pp.
 responds with vpp,vvv where v is value of analog port.
 
+MONITOR Port
+----------
+
+```arduino
 hpp,e,ttt
+```
 
 start monitoring port pp
 
@@ -186,11 +191,15 @@ cr,nn
 read nn bytes from device
 returns
 
+Version
+------
+
 v04,vvv,vvv,vvv....
-v
+v - version number. 
 returns version number
 
-Ports:
+Ports
+------
 
 Digital 4-13 servos or pin 13 for leds
 
