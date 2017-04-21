@@ -16,7 +16,7 @@ To install the Adafruit Neopixel library:
 3. Click on the box that appears and click the Install button.
 
 To install the VarSpeedServo library: 
-1. Go to [this](https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip) link and download the zip file:
+1. Go to [this link](https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip) and download the zip file:
 2. Select Sketch, Include Library, Add .ZIP Library.
 3. Browse to where you downloaded VarSpeedServo.zip � select it and click Open.
 
