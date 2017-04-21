@@ -16,7 +16,7 @@ To install the Adafruit Neopixel library:
 3. Click on the box that appears and click the Install button.
 
 To install the VarSpeedServo library: 
-1. Go to (this)[https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip] link and download the zip file:
+1. Go to [this](https://github.com/netlabtoolkit/VarSpeedServo/releases/download/v1.1.3/VarSpeedServo.zip) link and download the zip file:
 2. Select Sketch, Include Library, Add .ZIP Library.
 3. Browse to where you downloaded VarSpeedServo.zip � select it and click Open.
 
@@ -38,10 +38,6 @@ for moving servo motors and controlling LEDs.  It also allows the analogue input
 Commands:
 
 m, d, a, x, n, t, r, l, i, g, e, h, c, v
-
-// {29D81537-AF38-4BE3-9BEE-4B6952124806}
-
-static const GUID <<name>> = { 0x29d81537, 0xaf38, 0x4be3, { 0x9b, 0xee, 0x4b, 0x69, 0x52, 0x12, 0x48, 0x6 } };
 
 MOVE
 ---
